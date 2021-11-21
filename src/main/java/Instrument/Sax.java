@@ -18,6 +18,6 @@ public class Sax extends Instrument implements IPlay, ISell {
 
     @Override
     public String play() {
-        return null;
+        return "SAX-AH-MA-FONE";
     }
 }

@@ -14,10 +14,8 @@ public class Guitar extends Instrument implements IPlay, ISell {
     public int getStringNumber() {
         return stringNumber;
     }
-
-    @Override
     public String play() {
-        return null;
+        return "RIFFFF";
     }
 }
 
