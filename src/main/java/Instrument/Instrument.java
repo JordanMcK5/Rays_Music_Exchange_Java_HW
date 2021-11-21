@@ -1,6 +1,9 @@
-package Instruments;
+package Instrument;
 
-public abstract class Instrument {
+import Behaviours.IPlay;
+import Behaviours.ISell;
+
+public abstract class Instrument implements IPlay, ISell {
     private String type;
     private String colour;
     private int wholesalePrice;
@@ -17,31 +20,21 @@ public abstract class Instrument {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getColour() {
         return colour;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
     }
 
     public int getWholesalePrice() {
         return wholesalePrice;
     }
 
-    public void setWholesalePrice(int wholesalePrice) {
-        this.wholesalePrice = wholesalePrice;
-    }
-
     public int getRetailPrice() {
         return retailPrice;
     }
 
-    public void setRetailPrice(int retailPrice) {
-        this.retailPrice = retailPrice;
+    public int calculateProfit(Instrument instrument){
+        int profit = instrument.retailPrice - instrument.wholesalePrice;
+        return profit;
     }
 }
+

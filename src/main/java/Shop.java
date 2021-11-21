@@ -1,5 +1,4 @@
-import Behaviours.ISell;
-import Instruments.Instrument;
+import Instrument.Instrument;
 
 import java.util.ArrayList;
 
@@ -8,6 +7,10 @@ public class Shop {
 
     public Shop(){
         stock = new ArrayList<Instrument>();
+    }
+
+    public int getStockSize(){
+        return this.stock.size();
     }
 
     public void addStock(Instrument instrument){

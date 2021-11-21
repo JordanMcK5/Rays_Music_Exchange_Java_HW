@@ -1,5 +1,9 @@
 package Behaviours;
 
+import Instrument.Instrument;
+
 public interface ISell {
-    int calculateMarkup();
+
+    public int calculateProfit(Instrument instrument);
+
 }

@@ -1,4 +1,4 @@
-package Instruments;
+package Instrument;
 
 import Behaviours.IPlay;
 import Behaviours.ISell;
@@ -19,10 +19,5 @@ public class Sax extends Instrument implements IPlay, ISell {
     @Override
     public String play() {
         return null;
-    }
-
-    @Override
-    public int calculateMarkup() {
-        return 0;
     }
 }
